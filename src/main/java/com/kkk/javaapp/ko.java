@@ -1,10 +1,13 @@
 package com.kkk.javaapp;
 
 import com.kkk.kotlinapp.testDTO;
+import com.kkk.kotlinapp.상속.Counter;
+
 
 public class ko {
-    public testDTO a;
-    public void aa(testDTO a){
-        this.a = a;
+    public void aa(){
+        Counter.INSTANCE.up();
+        System.out.println(Counter.INSTANCE.getCount());
     }
 }
+

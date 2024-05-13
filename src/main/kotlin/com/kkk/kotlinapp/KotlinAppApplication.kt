@@ -1,28 +1,39 @@
 package com.kkk.kotlinapp
 
+import com.kkk.javaapp.ko
+import com.kkk.kotlinapp.상속.Counter
+import com.kkk.kotlinapp.상속.Dog
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import lombok.extern.slf4j.Slf4j
 import org.springframework.boot.runApplication
 
 private val logger = KotlinLogging.logger {}
 
-@Slf4j
 @SpringBootApplication
 class KotlinAppApplication
 
 fun main(args: Array<String>) {
-    var a = Book("함께 자라기", 20000).apply {
-        name = "[초특가]" + name
-        discount()
-    }
-    a.let {
-        println("상품명 : ${it.name}, 가격 : ${it.price}")
+    EventPrinter().start()
+}
+
+interface EventListener {
+    fun onEvent(count: Int)
+}
+
+class Counter(var listener: EventListener){
+    fun count() {
+        for(i in 1..100)
+            if(i%5 == 0) listener.onEvent(i)
     }
 }
 
-class Book(var name: String, var price: Int) {
-    fun discount() {
-        price -= 2000
+class EventPrinter: EventListener {
+    override fun onEvent(count:Int){
+        print("${count}-")
+    }
+    fun start(){
+        var counter = Counter(this)
+        counter.count()
     }
 }
+
