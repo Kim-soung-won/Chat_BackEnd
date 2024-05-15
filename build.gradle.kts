@@ -21,9 +21,18 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
+	implementation("org.springframework.boot:spring-boot-starter-validation")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+
+//
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+// 코틀린 리플렉션 라이브러리, 자바처럼 코틀린도 리플렉션을 통해 런타임에 코틀린 프로그램 내부 구조를 파악할 수 있다.
+// 런타임 라이브러리의 불필요한 범람을 위해 만들어졌다. 리플렉션은 https://sabarada.tistory.com/190
+	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 	implementation("io.github.oshai:kotlin-logging-jvm:5.1.1")
 
