@@ -6,9 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 private val logger = KotlinLogging.logger {}
 
 @SpringBootApplication
-class KotlinAppApplication{
-
-}
+class KotlinAppApplication
 
 fun main(args: Array<String>) {
     var arr: List<Int> = listOf(1,2,3,4,5)
