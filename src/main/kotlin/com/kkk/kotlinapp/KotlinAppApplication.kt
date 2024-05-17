@@ -1,39 +1,34 @@
 package com.kkk.kotlinapp
 
-import com.kkk.javaapp.ko
-import com.kkk.kotlinapp.상속.Counter
-import com.kkk.kotlinapp.상속.Dog
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 private val logger = KotlinLogging.logger {}
 
 @SpringBootApplication
-class KotlinAppApplication
+class KotlinAppApplication{
+
+}
 
 fun main(args: Array<String>) {
-    EventPrinter().start()
+    var arr: List<Int> = listOf(1,2,3,4,5)
+    var k = arr.count{ it > 3 }
+
+    println(k)
+    var state = State.SING
+    println(state)
+
+    state = State.SLEEP
+    println(state.isSleeping())
+
+    state = State.EAT
+    print(state.message)
 }
 
-interface EventListener {
-    fun onEvent(count: Int)
-}
+enum class State(val message: String) {
+    SING("노래를 부릅니다."),
+    EAT("밥을 먹습니다."),
+    SLEEP("잠을 잡니다.");
 
-class Counter(var listener: EventListener){
-    fun count() {
-        for(i in 1..100)
-            if(i%5 == 0) listener.onEvent(i)
-    }
+    fun isSleeping() = this == State.SLEEP
 }
-
-class EventPrinter: EventListener {
-    override fun onEvent(count:Int){
-        print("${count}-")
-    }
-    fun start(){
-        var counter = Counter(this)
-        counter.count()
-    }
-}
-

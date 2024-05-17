@@ -10,10 +10,11 @@ abstract class Animal(
     var type: String
 ) {
     abstract fun introduce()
-    fun eat () {
+    fun eat() {
         println("냠냠")
     }
-    init{
-        logger.info {"저는 ${type} ${name}이고 나이는 ${age}입니다."}
+
+    init {
+        logger.info { "저는 ${type} ${name}이고 나이는 ${age}입니다." }
     }
 }

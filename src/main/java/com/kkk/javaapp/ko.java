@@ -1,6 +1,5 @@
 package com.kkk.javaapp;
 
-import com.kkk.kotlinapp.testDTO;
 import com.kkk.kotlinapp.상속.Counter;
 
 

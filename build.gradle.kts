@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.ir.backend.js.compile
 plugins {
 	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.4"
+	id("org.sonarqube") version "4.3.0.3225"
 	kotlin("jvm") version "1.9.23"
 	kotlin("plugin.spring") version "1.9.23"
 }
