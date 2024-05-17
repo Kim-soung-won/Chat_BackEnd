@@ -12,6 +12,7 @@ fun main(args: Array<String>) {
     var arr: List<Int> = listOf(1,2,3,4,5)
     var k = arr.count{ it > 3 }
 
+    println("test")
     println(k)
     var state = State.SING
     println(state)
