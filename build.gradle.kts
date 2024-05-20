@@ -5,6 +5,10 @@ plugins {
 	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.4"
 	id("org.sonarqube") version "4.3.0.3225"
+
+	//JPA 사용에 필요한 기본 생성자 생성
+	id("org.jetbrains.kotlin.plugin.jpa") version "1.4.32"
+
 	kotlin("jvm") version "1.9.23"
 	kotlin("plugin.spring") version "1.9.23"
 }
@@ -36,6 +40,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 	implementation("io.github.oshai:kotlin-logging-jvm:5.1.1")
+
+	runtimeOnly("com.mysql:mysql-connector-j")
 
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
