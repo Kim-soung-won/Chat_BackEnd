@@ -18,6 +18,7 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+./src/main/front/node_modules/
 
 ### IntelliJ IDEA ###
 .idea
@@ -40,3 +41,4 @@ out/
 
 ### Kotlin ###
 .kotlin
+/src/main/front/node_modules/
