@@ -6,12 +6,15 @@ import org.springframework.stereotype.Repository
 
 @Repository
 @RequiredArgsConstructor
-class RedisRepository {
-    val redisTemplate = RedisTemplate<String, Any>()
-
+class RedisRepository(
+    private val redisTemplate: RedisTemplate<String, Any>
+) {
     val HASH_KEY: String = "TEST"
 
     fun save(id:String, test: Test): Unit{
         redisTemplate.opsForHash<String, Any>().put(HASH_KEY, id, test)
+    }
+    fun getByKey(key: String): Any?{
+        return redisTemplate.opsForHash<String, Any>().get(HASH_KEY, key)
     }
 }
