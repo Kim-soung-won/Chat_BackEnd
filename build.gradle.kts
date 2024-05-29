@@ -49,6 +49,14 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	// 웹 소켓
+	implementation("org.springframework.boot:spring-boot-starter-websocket")
+
+	// Redis
+	implementation("org.springframework.boot:spring-boot-starter-data-redis")
+	implementation("org.springframework.data:spring-boot-starter-actuator")
+	//
 }
 
 

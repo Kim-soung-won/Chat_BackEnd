@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -29,9 +30,22 @@ class MemberController(private val memberService: MemberService) {
     }
 
     @GetMapping("/api/GET/member")
-    fun getMemberById(@RequestBody request: MemberFindDTO): ResponseEntity<Any>{
-        println(request.id)
-        val member: Member = memberService.findById(request.id) ?: return ResponseEntity.status(404).body("Member not found")
+    fun getMemberById(@RequestParam(name="id")id:Long): ResponseEntity<Any>{
+        println(id)
+        val member: Member = memberService.findById(id) ?: return ResponseEntity.status(404).body("Member not found")
+        println(member.name)
         return ResponseEntity.status(201).body(member)
+    }
+    @GetMapping("/api/GET/memberList")
+    fun getMemberById(): ResponseEntity<Any>{
+        val members: List<Member> = memberService.findAll()
+        println(members.get(0).name)
+        println(members.size)
+        return ResponseEntity.status(201).body(members)
+    }
+
+    @GetMapping("/api/hello")
+    fun sayHello(): String{
+        return "Hello, World!"
     }
 }
