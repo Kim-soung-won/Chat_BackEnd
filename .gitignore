@@ -44,3 +44,4 @@ out/
 .kotlin
 /src/main/front/node_modules/
 /src/main/Palette-Pets-Front/node_modules/
+/src/main/resources/application.properties
