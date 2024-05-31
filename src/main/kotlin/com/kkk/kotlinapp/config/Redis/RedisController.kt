@@ -15,7 +15,7 @@ class RedisController (
 
     @PostMapping("/test/save")
     fun save():Unit{
-        val test = Test("10","hello", LocalDateTime.now())
+        val test = Test("150","하하안녕", LocalDateTime.now())
         redisRepository.save("1",test)
     }
     @GetMapping("/test/get")

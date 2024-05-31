@@ -1,8 +1,9 @@
-package com.kkk.kotlinapp.Controller
+package com.kkk.kotlinapp.Controller.DTO
 
 import java.io.Serializable
 
-data class ChatRequest (
+data class ChatResponse (
     var name: String="",
     var content: String ="",
+    var timeStamp: String = ""
 ) : Serializable
