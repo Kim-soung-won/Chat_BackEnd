@@ -1,9 +1,8 @@
-package com.kkk.kotlinapp.Member.Controller
+package com.kkk.kotlinapp.SpringExam.Controller
 
-import com.kkk.kotlinapp.Member.DTO.MemberFindDTO
-import com.kkk.kotlinapp.Member.DTO.MemberInsertDTO
-import com.kkk.kotlinapp.Member.Entity.Member
-import com.kkk.kotlinapp.Member.Service.MemberService
+import com.kkk.kotlinapp.SpringExam.DTO.MemberInsertDTO
+import com.kkk.kotlinapp.SpringExam.Entity.Member
+import com.kkk.kotlinapp.SpringExam.Service.MemberService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -32,7 +31,7 @@ class MemberController(private val memberService: MemberService) {
     @GetMapping("/api/GET/member")
     fun getMemberById(@RequestParam(name="id")id:Long): ResponseEntity<Any>{
         println(id)
-        val member: Member = memberService.findById(id) ?: return ResponseEntity.status(404).body("Member not found")
+        val member: Member = memberService.findById(id) ?: return ResponseEntity.status(404).body("SpringExam not found")
         println(member.name)
         return ResponseEntity.status(201).body(member)
     }

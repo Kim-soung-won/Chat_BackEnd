@@ -1,12 +1,9 @@
 package com.kkk.kotlinapp.config.Redis
 
-import com.kkk.kotlinapp.Controller.DTO.ChatResponse
-import lombok.RequiredArgsConstructor
 import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.stereotype.Repository
 
 @Repository
-@RequiredArgsConstructor
 class RedisRepository(
     private val redisTemplate: RedisTemplate<String, Any>
 ) {
@@ -19,13 +16,4 @@ class RedisRepository(
     fun getByKey(key: String): Any?{
         return redisTemplate.opsForHash<String, Any>().get(HASH_KEY, key)
     }
-
-    fun saveChat(chatRoomId: String, message: ChatResponse){
-        val key = getChatRoomKey(chatRoomId)
-        println("여기까지 잘 왔어요!!!")
-        redisTemplate.opsForList().rightPush(key,message)
-    }
-
-    fun getChatRoomKey(chatRoomId:String) = "chatroom:$chatRoomId"
-
 }

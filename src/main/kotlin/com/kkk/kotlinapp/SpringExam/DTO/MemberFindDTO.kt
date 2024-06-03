@@ -1,4 +1,4 @@
-package com.kkk.kotlinapp.Member.DTO
+package com.kkk.kotlinapp.SpringExam.DTO
 
 import lombok.Data
 

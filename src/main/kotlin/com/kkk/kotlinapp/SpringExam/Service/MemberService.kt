@@ -1,8 +1,7 @@
-package com.kkk.kotlinapp.Member.Service
+package com.kkk.kotlinapp.SpringExam.Service
 
-import com.kkk.kotlinapp.Member.Entity.Member
-import com.kkk.kotlinapp.Member.Repository.MemberRepository
-import lombok.RequiredArgsConstructor
+import com.kkk.kotlinapp.SpringExam.Entity.Member
+import com.kkk.kotlinapp.SpringExam.Repository.MemberRepository
 import org.springframework.stereotype.Service
 
 @Service
