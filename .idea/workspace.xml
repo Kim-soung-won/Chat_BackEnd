@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="23683cc8-286d-49d0-9d33-85ce0559538a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/Controller/MemberController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Controller/MemberController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/DTO/MemberFindDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberFindDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/DTO/MemberInsertDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberInsertDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/Entity/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Entity/Member.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/Repository/MemberRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Repository/MemberRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Member/Service/MemberService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Service/MemberService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/testClass.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/testDTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/상속/Animal.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/상속/Dog.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/ChatController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/ChatController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Service/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Service/ChatService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/WebConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/WebConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +57,9 @@
         <option value="Interface" />
         <option value="Kotlin Interface" />
         <option value="JSX File" />
+        <option value="HTML File" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -122,41 +115,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build kotlinApp.executor": "Run",
-    "Gradle.HelloControllerTest.executor": "Run",
-    "Gradle.kotlinApp [bootJar].executor": "Run",
-    "Gradle.kotlinApp [build].executor": "Run",
-    "Kotlin.KotlinAppApplicationKt.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.KotlinAppApplication.executor": "Run",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/KIMSW/Desktop/project/kotlinApp/src/main/kotlin/com",
-    "last_opened_file_path": "C:/Users/KIMSW/Desktop/project/Palette-Pets/Back",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build kotlinApp.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KotlinAppApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KotlinAppApplicationTests.shouldConnect.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kotlinApp [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kotlinApp [build].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.KotlinAppApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.KotlinAppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/KIMSW/Desktop/project/kotlinApp/src/main/kotlin/com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KIMSW/Desktop/project/Palette-Pets/Back&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ],
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\KIMSW\\.gradle"
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\KIMSW\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -177,6 +175,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.kkk.kotlinapp.HelloControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KotlinAppApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kkk.kotlinapp.KotlinAppApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KotlinAppApplicationTests.shouldConnect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kkk.kotlinapp.KotlinAppApplicationTests.shouldConnect&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,13 +277,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="KotlinAppApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kkk.kotlinapp.KotlinAppApplicationKt" />
-      <module name="kotlinApp.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KotlinAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="kotlinApp.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kkk.kotlinapp.KotlinAppApplication" />
@@ -247,10 +286,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.kotlinApp [build]" />
+        <item itemvalue="Gradle.KotlinAppApplicationTests.shouldConnect" />
+        <item itemvalue="Gradle.KotlinAppApplicationTests" />
         <item itemvalue="Gradle.HelloControllerTest" />
+        <item itemvalue="Gradle.kotlinApp [build]" />
         <item itemvalue="Gradle.kotlinApp [bootJar]" />
-        <item itemvalue="Kotlin.KotlinAppApplicationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +338,9 @@
       <workItem from="1717167164811" duration="38000" />
       <workItem from="1717167219954" duration="82000" />
       <workItem from="1717381680047" duration="962000" />
+      <workItem from="1717402473960" duration="11324000" />
+      <workItem from="1717465446878" duration="390000" />
+      <workItem from="1717491874193" duration="6003000" />
     </task>
     <servers />
   </component>

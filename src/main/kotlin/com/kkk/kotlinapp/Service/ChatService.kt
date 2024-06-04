@@ -1,6 +1,7 @@
 package com.kkk.kotlinapp.Service
 
 import com.kkk.kotlinapp.Controller.DTO.ChatResponse
+import jakarta.transaction.Transactional
 import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.stereotype.Service
 

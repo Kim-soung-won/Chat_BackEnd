@@ -4,6 +4,7 @@ import com.kkk.kotlinapp.Controller.DTO.ChatRequest
 import com.kkk.kotlinapp.Controller.DTO.ChatResponse
 import com.kkk.kotlinapp.Service.ChatService
 import com.kkk.kotlinapp.config.Redis.RedisRepository
+import jakarta.servlet.http.HttpServletResponse
 import org.springframework.messaging.handler.annotation.MessageMapping
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.messaging.simp.SimpMessagingTemplate
@@ -18,12 +19,14 @@ import java.time.format.DateTimeFormatter
 @Controller
 class ChatController(
     private val simpMessagingTemplate: SimpMessagingTemplate,
-    private val chatService: ChatService
+    private val chatService: ChatService,
+    private val wordfiltering: BadWordService
 ){
     @MessageMapping("/chat") //채팅 보내기
     fun sendMessage(@Payload message: ChatRequest): Unit{
         var destination: String = determineDestination(message.id)
         val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        message.content = wordfiltering.filterBadWords(message.content)
         val response: ChatResponse = ChatResponse(message.name, message.content, LocalTime.now().format(formater))
         simpMessagingTemplate.convertAndSend(destination, response)
 
@@ -38,4 +41,5 @@ class ChatController(
     fun getChatHistory(@RequestParam id: String): List<ChatResponse>{
         return chatService.getMessageHistory(id)
     }
+
 }
