@@ -22,6 +22,7 @@ WORKDIR /work
 # JAR 파일을 컨테이너에 복사
 # (예: ./build/libs/your-application.jar 경로를 사용한다고 가정)
 COPY ./build/libs/*.jar /work/*.jar
+RUN chmod +x /work/entrypoint.sh
 
 # JAR 파일을 실행
-ENTRYPOINT ["java", "-jar", "/work/kotlinApp-*-SNAPSHOT.jar"]
+ENTRYPOINT ["/work/entrypoint.sh"]
