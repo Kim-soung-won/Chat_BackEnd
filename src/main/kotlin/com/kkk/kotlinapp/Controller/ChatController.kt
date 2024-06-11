@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
+import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 
@@ -25,9 +26,9 @@ class ChatController(
     @MessageMapping("/chat") //채팅 보내기
     fun sendMessage(@Payload message: ChatRequest): Unit{
         var destination: String = determineDestination(message.id)
-        val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("MM-dd HH:mm")
         message.content = wordfiltering.filterBadWords(message.content)
-        val response: ChatResponse = ChatResponse(message.name, message.content, LocalTime.now().format(formater))
+        val response: ChatResponse = ChatResponse(message.name, message.content, LocalDateTime.now().format(formater))
         simpMessagingTemplate.convertAndSend(destination, response)
 
         chatService.saveChat(message.id, response)
