@@ -1,27 +1,35 @@
 package com.kkk.kotlinapp.config.Aop
 
 import io.github.oshai.kotlinlogging.KLogger
+import io.github.oshai.kotlinlogging.KotlinLogging
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect
+import org.slf4j.LoggerFactory
+import org.springframework.context.annotation.DependsOn
+import org.springframework.context.annotation.Lazy
+import org.springframework.stereotype.Component
+
+
 
 @Aspect
-class TimeTrace(
-    private val logger: KLogger
-) {
+@Component
+class TimeTrace {
+
+    private val log = LoggerFactory.getLogger(this.javaClass)!!
 
     @Around("execution(* com.kkk.kotlinapp..*(..))")
     @Throws(Throwable::class)
     fun execute(joinPoint: ProceedingJoinPoint) : Any?{
         val start: Long = System.currentTimeMillis()
-        logger.info { "START: $joinPoint" }
+        log.info("START: $joinPoint")
         println("==========================================")
         return try{
             joinPoint.proceed()
         } finally {
             val finish = System.currentTimeMillis()
             val timeMs = finish - start
-            logger.info { "END: $joinPoint $timeMs ms" }
+            log.info("END: $joinPoint $timeMs ms")
             println("==========================================")
         }
     }
