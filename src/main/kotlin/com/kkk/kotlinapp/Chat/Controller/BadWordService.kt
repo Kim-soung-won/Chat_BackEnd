@@ -1,4 +1,4 @@
-package com.kkk.kotlinapp.Controller
+package com.kkk.kotlinapp.Chat.Controller
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue

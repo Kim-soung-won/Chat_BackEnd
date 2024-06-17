@@ -1,13 +1,9 @@
 package com.kkk.kotlinapp.config.Aop
 
-import io.github.oshai.kotlinlogging.KLogger
-import io.github.oshai.kotlinlogging.KotlinLogging
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect
 import org.slf4j.LoggerFactory
-import org.springframework.context.annotation.DependsOn
-import org.springframework.context.annotation.Lazy
 import org.springframework.stereotype.Component
 
 

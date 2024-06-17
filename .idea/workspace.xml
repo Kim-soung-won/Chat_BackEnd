@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="23683cc8-286d-49d0-9d33-85ce0559538a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/KotlinAppApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/KotlinAppApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/BadWordService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/BadWordService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/ChatController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/DTO/ChatRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/DTO/ChatRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/DTO/ChatResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/DTO/ChatResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Service/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Controller/MemberController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberFindDTO.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberInsertDTO.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Entity/Member.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Repository/MemberRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Service/MemberService.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Aop/TimeTrace.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Aop/TimeTrace.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/LoggerConfig.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +64,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Kotlin Interface" />
         <option value="JSX File" />
         <option value="HTML File" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -475,7 +483,9 @@
       <workItem from="1718089476970" duration="6468000" />
       <workItem from="1718152419323" duration="26000" />
       <workItem from="1718156521372" duration="1380000" />
-      <workItem from="1718239064064" duration="3745000" />
+      <workItem from="1718239064064" duration="8556000" />
+      <workItem from="1718348083656" duration="2475000" />
+      <workItem from="1718584912757" duration="17513000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package com.kkk.kotlinapp.Controller.DTO
+package com.kkk.kotlinapp.Chat.Controller.DTO
 
 import java.io.Serializable
 

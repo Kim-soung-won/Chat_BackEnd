@@ -1,6 +1,6 @@
-package com.kkk.kotlinapp.Service
+package com.kkk.kotlinapp.Chat.Service
 
-import com.kkk.kotlinapp.Controller.DTO.ChatResponse
+import com.kkk.kotlinapp.Chat.Controller.DTO.ChatResponse
 import jakarta.transaction.Transactional
 import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.stereotype.Service
@@ -18,6 +18,6 @@ class ChatService(
 
     fun getMessageHistory(chatRoomId: String): List<ChatResponse>{
         val key = getChatRoomKey(chatRoomId)
-        return redisTemplate.opsForList().range(key,0,-1)?.map { it as ChatResponse} ?: emptyList()
+        return redisTemplate.opsForList().range(key,0,-1)?.map { it as ChatResponse } ?: emptyList()
     }
 }
