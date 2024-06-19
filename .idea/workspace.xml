@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="23683cc8-286d-49d0-9d33-85ce0559538a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/BadWordService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/BadWordService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/ChatController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/DTO/ChatRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/DTO/ChatRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Controller/DTO/ChatResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/DTO/ChatResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Service/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Controller/MemberController.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberFindDTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/DTO/MemberInsertDTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Entity/Member.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Repository/MemberRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/SpringExam/Service/MemberService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Aop/TimeTrace.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Aop/TimeTrace.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +133,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/KIMSW/Desktop/project/kotlinApp/src/main/kotlin/com",
-    "last_opened_file_path": "C:/Users/KIMSW/Desktop/project/Palette-Pets/Back",
+    "last_opened_file_path": "C:/Users/KIMSW/Desktop/project/KotlinChat/kotlinApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -485,7 +475,8 @@
       <workItem from="1718156521372" duration="1380000" />
       <workItem from="1718239064064" duration="8556000" />
       <workItem from="1718348083656" duration="2475000" />
-      <workItem from="1718584912757" duration="17513000" />
+      <workItem from="1718584912757" duration="27174000" />
+      <workItem from="1718697375352" duration="5478000" />
     </task>
     <servers />
   </component>

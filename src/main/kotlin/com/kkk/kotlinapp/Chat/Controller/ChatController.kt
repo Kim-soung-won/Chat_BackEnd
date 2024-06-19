@@ -28,7 +28,8 @@ class ChatController(
         var response = ChatResponse(message.name, message.content, LocalDateTime.now().format(formater))
         simpMessagingTemplate.convertAndSend(destination, response)
 
-        chatService.saveChat(message.id, response)
+        chatService.countChat(message.id, message.name) // 상대방이 안읽은 채팅 갯수 추가
+        chatService.saveChat(message.id, response) //redis에 쓰기
     }
 
     fun determineDestination(id:String): String{ //채팅 구독 경로 설정(URL을 기준으로)
@@ -37,7 +38,9 @@ class ChatController(
 
     @GetMapping("/chat/history") //채팅 내역 조회
     @ResponseBody
-    fun getChatHistory(@RequestParam id: String): List<ChatResponse>{
+    fun getChatHistory(@RequestParam id: String, @RequestParam user: String): List<ChatResponse>{
+        println("============$user===================")
+        chatService.readChat(id, user) // 안읽은 채팅 count 삭제
         return chatService.getMessageHistory(id)
     }
 
