@@ -22,7 +22,7 @@ class ChatController(
     @MessageMapping("/chat") //채팅 보내기
     fun sendMessage(@Payload message: ChatRequest): Unit{
         var destination: String = determineDestination(message.id)
-        val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("MM-dd HH:mm")
+        val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
         message.content = wordfiltering.filterBadWords(message.content)
 
         var response = ChatResponse(message.name, message.content, LocalDateTime.now().format(formater))
@@ -43,7 +43,6 @@ class ChatController(
         chatService.readChat(id, user) // 안읽은 채팅 count 삭제
         return chatService.getMessageHistory(id)
     }
-
 
 //    @PostMapping("/api/chat/redirect")
 //    @ResponseBody

@@ -7,7 +7,7 @@
     <list default="true" id="23683cc8-286d-49d0-9d33-85ce0559538a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Controller/ChatController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/Chat/Service/ChatService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banned_words.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banned_words.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,17 +31,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="kotlinApp" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kotlinApp" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kotlinApp" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -133,7 +122,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/KIMSW/Desktop/project/kotlinApp/src/main/kotlin/com",
-    "last_opened_file_path": "C:/Users/KIMSW/Desktop/project/KotlinChat/kotlinApp",
+    "last_opened_file_path": "C:/Users/KIMSW/Music/프로젝트/project/KotlinChat/kotlinApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -477,6 +466,12 @@
       <workItem from="1718348083656" duration="2475000" />
       <workItem from="1718584912757" duration="27174000" />
       <workItem from="1718697375352" duration="5478000" />
+      <workItem from="1718761349479" duration="3271000" />
+      <workItem from="1718782189195" duration="4740000" />
+      <workItem from="1718881089142" duration="792000" />
+      <workItem from="1718956455560" duration="4381000" />
+      <workItem from="1718990118445" duration="22000" />
+      <workItem from="1719284342427" duration="15000" />
     </task>
     <servers />
   </component>
