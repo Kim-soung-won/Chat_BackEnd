@@ -3,6 +3,7 @@ package com.kkk.kotlinapp.Chat.Controller
 import com.kkk.kotlinapp.Chat.Controller.DTO.ChatRequest
 import com.kkk.kotlinapp.Chat.Controller.DTO.ChatResponse
 import com.kkk.kotlinapp.Chat.Service.ChatService
+import com.kkk.kotlinapp.config.Security.Annotation.JwtAuth
 import org.springframework.messaging.handler.annotation.MessageMapping
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.messaging.simp.SimpMessagingTemplate
@@ -20,7 +21,8 @@ class ChatController(
     private val wordfiltering: BadWordService
 ){
     @MessageMapping("/chat") //채팅 보내기
-    fun sendMessage(@Payload message: ChatRequest): Unit{
+    fun sendMessage(@Payload @JwtAuth message: ChatRequest): Unit{
+        println("message : $message")
         var destination: String = determineDestination(message.id)
         val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
         message.content = wordfiltering.filterBadWords(message.content)
