@@ -32,10 +32,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	implementation("org.springframework.boot:spring-boot-starter-security")
-	implementation("io.jsonwebtoken:jjwt-api:0.12.3")
-	implementation("io.jsonwebtoken:jjwt-impl:0.12.3")
-	implementation("io.jsonwebtoken:jjwt-jackson:0.12.3")
+//	implementation("org.springframework.boot:spring-boot-starter-security")
+//	implementation("io.jsonwebtoken:jjwt-api:0.12.3")
+//	implementation("io.jsonwebtoken:jjwt-impl:0.12.3")
+//	implementation("io.jsonwebtoken:jjwt-jackson:0.12.3")
 //
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 

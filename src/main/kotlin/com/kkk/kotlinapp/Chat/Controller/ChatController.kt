@@ -3,7 +3,6 @@ package com.kkk.kotlinapp.Chat.Controller
 import com.kkk.kotlinapp.Chat.Controller.DTO.ChatRequest
 import com.kkk.kotlinapp.Chat.Controller.DTO.ChatResponse
 import com.kkk.kotlinapp.Chat.Service.ChatService
-import com.kkk.kotlinapp.config.Security.Annotation.JwtAuth
 import org.springframework.messaging.handler.annotation.MessageMapping
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.messaging.simp.SimpMessagingTemplate

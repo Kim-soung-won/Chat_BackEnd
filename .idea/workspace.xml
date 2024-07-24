@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="23683cc8-286d-49d0-9d33-85ce0559538a" name="Changes" comment="인증 객체, Member 객체 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/Annotation/JwtAuth.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/Annotation/JwtAuth.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/Annotation/LoginCheckMethodArgumentResolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/Annotation/LoginCheckMethodArgumentResolver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/DTO/CustomUserDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/DTO/CustomUserDetails.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/JWTUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/JWTUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/JwtRequestFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/JwtRequestFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/SecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/kkk/kotlinapp/config/Security/SecurityConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +128,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/KIMSW/Desktop/project/kotlinApp/src/main/kotlin/com",
-    "last_opened_file_path": "C:/Users/KIMSW/Music/프로젝트/project/Palette-Pets/Back",
+    "last_opened_file_path": "C:/Users/KIMSW/Music/프로젝트/project/KotlinChat/kotlinApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -478,6 +485,7 @@
       <workItem from="1720156973851" duration="5876000" />
       <workItem from="1721617022710" duration="9973000" />
       <workItem from="1721633387816" duration="32000" />
+      <workItem from="1721791898934" duration="545000" />
     </task>
     <task id="LOCAL-00001" summary="인증 객체, Member 객체 추가">
       <option name="closed" value="true" />
