@@ -21,7 +21,7 @@ class ChatController(
     private val wordfiltering: BadWordService
 ){
     @MessageMapping("/chat") //채팅 보내기
-    fun sendMessage(@Payload @JwtAuth message: ChatRequest): Unit{
+    fun sendMessage(@Payload message: ChatRequest): Unit{
         println("message : $message")
         var destination: String = determineDestination(message.id)
         val formater: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
